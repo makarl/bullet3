@@ -2,7 +2,7 @@
 [![Travis Build Status](https://api.travis-ci.org/bulletphysics/bullet3.png?branch=master)](https://travis-ci.org/bulletphysics/bullet3)
 [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/6sly9uxajr6xsstq)](https://ci.appveyor.com/project/erwincoumans/bullet3)
 
-# Bullet 2.x including experimental Bullet 3 OpenCL.
+# Bullet 2.x including experimental Bullet 3 OpenCL and FEM.
 
 This is the official repository of Bullet 2.x, moved from http://bullet.googlecode.com
 It includes the optional work-in-progress Bullet 3 GPU pipeline.
