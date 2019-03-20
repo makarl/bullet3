@@ -71,7 +71,7 @@ EGL_CXX_FLAGS = ''
 # libraries += [current_python]
 
 libraries = []
-include_dirs = ["examples", 
+include_dirs = ["examples",
    "src/PhysX/physx/source/common/include",
    "src/PhysX/physx/source/common/src",
     "src/PhysX/physx/source/fastxml/include",
@@ -126,7 +126,7 @@ include_dirs = ["examples",
     "src/PhysX/physx/include/vehicle",
     "src/PhysX/pxshared/include",
     ]
-    
+
 
 try:
     import numpy
@@ -540,6 +540,7 @@ if _platform == "linux" or _platform == "linux2":
     CXX_FLAGS += '-DGLEW_DYNAMIC_LOAD_ALL_GLX_FUNCTIONS=1 '
     CXX_FLAGS += '-DDYNAMIC_LOAD_X11_FUNCTIONS '
     CXX_FLAGS += '-DHAS_SOCKLEN_T '
+    CXX_FLAGS += '-std=c++11 '
     CXX_FLAGS += '-fno-inline-functions-called-once '
     EGL_CXX_FLAGS += '-DBT_USE_EGL '
     EGL_CXX_FLAGS += '-fPIC ' # for plugins
@@ -673,4 +674,3 @@ setup(
     packages=[x for x in find_packages('examples/pybullet/gym')],
     package_data = { 'pybullet_data': need_files }
 )
-
